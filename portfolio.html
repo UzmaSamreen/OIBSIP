@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: LightCyan;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Contact Form Styling */
+#contact {
+    background-color: Lavender ;
+    padding: 50px 0;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: Thistle;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: DarkMagenta;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="C:\Users\Dell\Downloads\profile image.jpg" alt="Profile Picture">
+        <h1>Uzma Samreen</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p style="text-align: justify;">"Hi, I'm Uzma Samreen,a passionate BTech student specializing in Computer Science and Engineering.Currently pursuing my degree at SBIT College, I thrive on challenging projects and collaborative environments. With a strong foundation in Programming Skills,I've actively contributed to various projects, honing my problem-solving and analytical abilities. Through internships and extracurricular activities,I've gained practical experience.Eager to embark on new challenges and continuous learning, I'm dedicated to achieving excellence in my academic and professional endeavors."
+</p>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2>Portfolio</h2>
+        <h3> PROJECTS</h3>
+        <div class="project">
+            <img src="C:\Users\Dell\Downloads\mini pro image.jpg" alt="Project 1">
+            <h3>Probabilistic Inference and Trustworthiness Evaluation of Associative Links toward Malicious Attack Detection for Online Recommendations</h3>
+        </div>
+        <div class="project">
+            <img src="C:\Users\Dell\Downloads\major pro image.png" alt="Project 2">
+            <h3>Stress Detection in IT Professionals by Image Processing and Machine Learning</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Uzma Samreen. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
